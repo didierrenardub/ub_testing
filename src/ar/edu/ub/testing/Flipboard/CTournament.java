@@ -1,21 +1,20 @@
-package ar.edu.ub.testing2018.ConsoleWarriors;
+package ar.edu.ub.testing.Flipboard;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
+/**
+ Created by Didier on 9/6/2017.
+ 
+ */
+
 public class CTournament
 {
-    public CTournament(int abilityPoints)
+    public CTournament()
     {
         m_players = new ArrayList<CPlayer>();
         m_matches = new ArrayList<CMatch>();
-        m_abilityPoints = abilityPoints;
-    }
-
-    public int maxAbility()
-    {
-        return m_abilityPoints;
     }
     
     public void addPlayer(CPlayer player)
@@ -25,17 +24,12 @@ public class CTournament
             System.out.println("Player cannot be null");
             return;
         }
-        else if(player.warrior() == null)
+        else if(player.name() == null || player.name() == "")
         {
-            System.out.println("Player " + player.playerName() + " cannot participate as he has no warrior");
+            System.out.println("Player has no name");
             return;
         }
-        else if(!player.warrior().valid())
-        {
-            System.out.println("Player " + player.playerName() + " cannot participate as his warrior is invalid");
-            return;
-        }
-
+        
         m_players.add(player);
     }
     
@@ -45,7 +39,7 @@ public class CTournament
         {
             for(int j = i + 1; j < m_players.size(); j++)
             {
-                m_matches.add(new CMatch(m_players.get(i), m_players.get(j), m_abilityPoints));
+                m_matches.add(new CMatch(m_players.get(i), m_players.get(j)));
             }
         }
         
@@ -58,11 +52,10 @@ public class CTournament
         
         for(CPlayer p : m_players)
         {
-            System.out.println(p.playerName() + ": " + p.points() + " points");
+            System.out.println(p.name() + ": " + p.totalFlips() + " points");
         }
     }
     
     private ArrayList<CPlayer> m_players;
     private ArrayList<CMatch> m_matches;
-    private int m_abilityPoints;
 }

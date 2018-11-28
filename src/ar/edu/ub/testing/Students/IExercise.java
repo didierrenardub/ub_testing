@@ -1,4 +1,4 @@
-package ar.edu.ub.testing2018.Students;
+package ar.edu.ub.testing.Students;
 
 /**
  * Interface for exercises. Students will have to implement this interface

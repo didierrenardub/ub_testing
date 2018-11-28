@@ -1,6 +1,4 @@
-package ar.edu.ub.testing2018.Students;
-
-import java.util.ArrayList;
+package ar.edu.ub.testing.Students;
 
 /**
  * Base class for students. Each student should inherit from it and

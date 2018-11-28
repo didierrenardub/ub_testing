@@ -1,4 +1,4 @@
-package ar.edu.ub.testing2018.ConsoleWarriors;
+package ar.edu.ub.testing.ConsoleWarriors;
 
 /**
  Created by Didier on 21/10/2016.

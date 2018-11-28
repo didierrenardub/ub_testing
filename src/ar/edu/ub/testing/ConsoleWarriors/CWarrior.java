@@ -1,4 +1,4 @@
-package ar.edu.ub.testing2018.ConsoleWarriors;
+package ar.edu.ub.testing.ConsoleWarriors;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package ar.edu.ub.testing2018.Flipboard;
+package ar.edu.ub.testing.Flipboard;
 
 import java.util.ArrayList;
 import java.util.Collections;

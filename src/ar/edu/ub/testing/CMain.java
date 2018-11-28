@@ -1,11 +1,11 @@
-package ar.edu.ub.testing2018;
+package ar.edu.ub.testing;
 
-import ar.edu.ub.testing2018.ConsoleWarriors.CPlayer;
-import ar.edu.ub.testing2018.ConsoleWarriors.CTournament;
-import ar.edu.ub.testing2018.ConsoleWarriors.CWarriorBot;
-import ar.edu.ub.testing2018.Flipboard.CFlipBot;
-import ar.edu.ub.testing2018.Students.CStudentStatistics;
-import ar.edu.ub.testing2018.Students.IStudent;
+import ar.edu.ub.testing.ConsoleWarriors.CPlayer;
+import ar.edu.ub.testing.ConsoleWarriors.CTournament;
+import ar.edu.ub.testing.ConsoleWarriors.CWarriorBot;
+import ar.edu.ub.testing.Flipboard.CFlipBot;
+import ar.edu.ub.testing.Students.CStudentStatistics;
+import ar.edu.ub.testing.Students.IStudent;
 
 import java.util.Scanner;
 
@@ -74,7 +74,7 @@ public class CMain
     
     private void flipboardTournament()
     {
-        ar.edu.ub.testing2018.Flipboard.CTournament t = new ar.edu.ub.testing2018.Flipboard.CTournament();
+        ar.edu.ub.testing.Flipboard.CTournament t = new ar.edu.ub.testing.Flipboard.CTournament();
         t.addPlayer(new CFlipBot("Aguilera"));
         t.addPlayer(new CFlipBot("Greiner"));
         t.addPlayer(new CFlipBot("Wittbecker"));
