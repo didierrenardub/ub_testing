@@ -16,7 +16,13 @@ def load_players(colors):
     players.remove('__init__')
     for player_name in players:
         player = importlib.import_module('players.' + player_name)
-        created.append(getattr(player, 'create')(colors[current_color]))
+        p = None
+        try:
+            p = getattr(player, 'create')(colors[current_color])
+        except:
+            pass
+        if p is not None:
+            created.append(p)
         current_color = current_color + 1
         if current_color >= len(colors):
             current_color = 0
