@@ -10,12 +10,12 @@ def load_players(colors):
     current_color = 0
     players = []
     created = []
-    for obj in os.listdir(os.path.join(os.path.dirname(sys.argv[0]), 'players')):
+    for obj in os.listdir(os.path.join(os.path.dirname(sys.argv[0]), 'flipcards', 'players')):
         if obj.endswith('.py'):
             players.append(obj.rstrip('.py'))
     players.remove('__init__')
     for player_name in players:
-        player = importlib.import_module('players.' + player_name)
+        player = importlib.import_module('flipcards.players.' + player_name)
         p = None
         try:
             p = getattr(player, 'create')(colors[current_color])
