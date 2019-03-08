@@ -96,6 +96,17 @@ class Match(UIInterface):
                 return c
         return None
 
+    def disqualify(self, message):
+        self.add_message(message, UIColor.light_red())
+        winner = self._home
+        if self._turn == self._home:
+            winner = self._away
+        self._home.reset()
+        self._away.reset()
+        self.render()
+        time.sleep(2)
+        return winner
+
     def play(self):
         while not self._board.full() and len(self._home_deck) > 0 and len(self._away_deck) > 0:
             self.render()
@@ -111,17 +122,12 @@ class Match(UIInterface):
 
             tc = TimeoutCall(3, self._turn.play, self._board.read_only(), l[:5])
             if not tc.start():
-                self.add_message(self._turn.name() + ' developed a crappy AI, disqualifying', UIColor.light_red())
-                winner = self._home
-                if self._turn == self._home:
-                    winner = self._away
-                self._home.reset()
-                self._away.reset()
-                self.render()
-                time.sleep(self._message_delay * 2)
-                return winner
+                return self.disqualify(self._turn.name() + ' developed a crappy AI, disqualifying')
             else:
-                card, x, y = tc.result()
+                try:
+                    card, x, y = tc.result()
+                except:
+                    return self.disqualify(self._turn.name() + ' returned an ill-formed touple, disqualifying')
 
             card = self.find_card(card, l)
 
@@ -137,7 +143,7 @@ class Match(UIInterface):
                 if c is not None:
                     l.remove(c)
             else:
-                self.add_message(self._turn.name() + ' MADE AN ILEGAL MOVE', UIColor.light_red())
+                return self.disqualify(self._turn.name() + ' made an ilegal move, disqualifying')
             if self._turn == self._home:
                 self._turn = self._away
             else:

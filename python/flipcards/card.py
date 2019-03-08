@@ -60,7 +60,7 @@ class Card(Label):
         return self._invincible
 
     def equals(self, other):
-        return self.up() == other.up() and self.down() == other.down() and self.left() == other.left() and self.right() == other.right()
+        return type(other) == Card and self.up() == other.up() and self.down() == other.down() and self.left() == other.left() and self.right() == other.right()
 
     def flip(self, by, by_value, my_value):
         if by_value > my_value and not by == self.owner() and not self.invincible():
