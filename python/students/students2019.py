@@ -43,7 +43,7 @@ class Students2019(Students):
         self.federico().add_exercise('1m2', 10.0)
         self.andres().add_exercise('1m2', 1)
         self.francisco().add_exercise('1m2', 1)
-        self.diego().add_exercise('1m2', 1)
+        self.diego().add_exercise('1m2', 10.0)
         self.damian().add_exercise('1m2', 1)
         self.rocio().add_exercise('1m2', 1)
         self.joaquin().add_exercise('1m2', 1)
