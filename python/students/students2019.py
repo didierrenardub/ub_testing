@@ -45,7 +45,7 @@ class Students2019(Students):
         self.francisco().add_exercise('1m2', 10.0)
         self.diego().add_exercise('1m2', 10.0)
         self.damian().add_exercise('1m2', 1)
-        self.rocio().add_exercise('1m2', 1)
+        self.rocio().add_exercise('1m2', 8.0)
         self.joaquin().add_exercise('1m2', 10.0)
 
         # class 2
@@ -57,7 +57,7 @@ class Students2019(Students):
         # self.francisco().grade_class(1, 1, 0, 10, 7, 10, 0, 0)
         # self.diego().grade_class(1, 1, 0, 10, 8, 0, 0, 0)
         # self.damian().grade_class(1, 10, 10, 3, 2, 10, 0, 0)
-        # self.rocio().grade_class(1, 10, 10, 3, 1, 0, 0, 0)
+        # self.rocio().grade_class(1, 10, 10, 10, 6, 0, 0, 0)
         # self.joaquin().grade_class(1, 10, 10, 10, 8, 0, 0, 0)
 
     def alex(self):
