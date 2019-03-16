@@ -134,11 +134,11 @@ public class CBoard
         hLine += "+";
         render.add(hLine);
 
-        for(int x = 0; x < this.m_board.size(); x++)
+        for(int y = 0; y < this.m_board.get(0).size(); y++)
         {
             render.add("|");
             int idx = render.size() - 1;
-            for(int y = 0; y < this.m_board.get(x).size(); y++)
+            for(int x = 0; x < this.m_board.size(); x++)
             {
                 Character c = this.tile(x, y);
                 if(c == null)
