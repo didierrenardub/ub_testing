@@ -49,16 +49,16 @@ class Students2019(Students):
         self.joaquin().add_exercise('1m2', 10.0)
 
         # class 2
-        # self.alex().grade_class(1, 10, 10, 10, 9, 0, 0, 0)
-        # self.franco().grade_class(1, 10, 10, 3, 1, 0, 0, 0)
-        # self.belen().grade_class(1, 10, 10, 10, 8, 0, 0, 0)
-        # self.federico().grade_class(1, 10, 10, 10, 8, 0, 0, 0)
-        # self.andres().grade_class(1, 10, 10, 10, 8, 0, 0, 0)
-        # self.francisco().grade_class(1, 1, 0, 10, 7, 10, 0, 0)
-        # self.diego().grade_class(1, 1, 0, 10, 8, 0, 0, 0)
-        # self.damian().grade_class(1, 10, 10, 3, 2, 10, 0, 0)
-        # self.rocio().grade_class(1, 10, 10, 10, 6, 0, 0, 0)
-        # self.joaquin().grade_class(1, 10, 10, 10, 8, 0, 0, 0)
+        self.alex().grade_class(2, 10, 10, 10, 9, 10, 10, 8)
+        self.franco().grade_class(2, 10, 10, 3, 1, 0, 0, 1)
+        self.belen().grade_class(2, 10, 10, 10, 8, 0, 0, 1)
+        self.federico().grade_class(2, 10, 10, 10, 8, 0, 0, 10)
+        self.andres().grade_class(2, 10, 10, 10, 8, 0, 0, 1)
+        self.francisco().grade_class(2, 10, 0, 10, 7, 10, 0, 1)
+        self.diego().grade_class(2, 10, 0, 10, 8, 0, 0, 1)
+        self.damian().grade_class(2, 10, 10, 3, 2, 10, 0, 1)
+        self.rocio().grade_class(2, 10, 10, 10, 6, 0, 0, 1)
+        self.joaquin().grade_class(2, 10, 10, 10, 8, 0, 0, 1)
 
     def alex(self):
         return self.student_by_name('Alexander Lehmacher')
