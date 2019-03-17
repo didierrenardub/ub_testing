@@ -65,6 +65,41 @@ class Students2019(Students):
         self.rocio().grade_class(2, 10, 10, 10, 6, 0, 0, 1)
         self.joaquin().grade_class(2, 10, 10, 10, 8, 0, 0, 1)
 
+        self.alex().add_exercise('2m', 1)
+        self.franco().add_exercise('2m', 1)
+        self.belen().add_exercise('2m', 1)
+        self.federico().add_exercise('2m', 1)
+        self.andres().add_exercise('2m', 1)
+        self.francisco().add_exercise('2m', 1)
+        self.diego().add_exercise('2m', 1)
+        self.damian().add_exercise('2m', 1)
+        self.rocio().add_exercise('2m', 1)
+        self.joaquin().add_exercise('2m', 1)
+
+        self.alex().add_exercise('2m2', 1)
+        self.franco().add_exercise('2m2', 1)
+        self.belen().add_exercise('2m2', 1)
+        self.federico().add_exercise('2m2', 1)
+        self.andres().add_exercise('2m2', 1)
+        self.francisco().add_exercise('2m2', 1)
+        self.diego().add_exercise('2m2', 1)
+        self.damian().add_exercise('2m2', 1)
+        self.rocio().add_exercise('2m2', 1)
+        self.joaquin().add_exercise('2m2', 1)
+
+        # class 3
+        #self.alex().grade_class(3, 0, 0, 0, 0, 0, 0, 0)
+        #self.franco().grade_class(3, 0, 0, 0, 0, 0, 0, 0)
+        #self.belen().grade_class(3, 0, 0, 0, 0, 0, 0, 0)
+        #self.federico().grade_class(3, 0, 0, 0, 0, 0, 0, 0)
+        #self.andres().grade_class(3, 0, 0, 0, 0, 0, 0, 0)
+        #self.francisco().grade_class(3, 0, 0, 0, 0, 0, 0, 0)
+        #self.diego().grade_class(3, 0, 0, 0, 0, 0, 0, 0)
+        #self.damian().grade_class(3, 0, 0, 0, 0, 0, 0, 0)
+        #self.rocio().grade_class(3, 0, 0, 0, 0, 0, 0, 0)
+        #self.joaquin().grade_class(3, 0, 0, 0, 0, 0, 0, 0)
+
+
     def alex(self):
         return self.student_by_name('Alexander Lehmacher')
 
