@@ -1,11 +1,12 @@
 package tarea;
 import javax.swing.JOptionPane;
-import javax.swing.Timer;
 
 public class Juego {
-   
-    public void startRound(Jugador player1,Jugador player2){
-        
+    static int scorep1=0;
+    static int scorep2=0;
+    public void startRound(){
+        Jugador player1 = new Jugador("Jugador 1");
+        Jugador player2 = new Jugador("Jugador 2");
         String move1=player1.hacerJugada();
         String move2=player2.hacerJugada();
         String msj="El Jugador "+ player1.getNombre()+" ha elegido: "+move1+" \n"
@@ -18,16 +19,34 @@ public class Juego {
          
         switch(move1){
             case("papel"):
-                if(move2.equals("tijera"))JOptionPane.showMessageDialog(null,msj+"\nGana Jugador: "+player2.getNombre());
-                if(move2.equals("piedra"))JOptionPane.showMessageDialog(null,msj+"\nGana Jugador: "+player1.getNombre());
+                if(move2.equals("tijera")){
+                    JOptionPane.showMessageDialog(null,msj+"\nGana Jugador: "+player2.getNombre());
+                    scorep2++;
+                }
+                if(move2.equals("piedra")){
+                    JOptionPane.showMessageDialog(null,msj+"\nGana Jugador: "+player1.getNombre());
+                    scorep1++;
+                }
                 break;
             case("tijera"):
-                if(move2.equals("piedra"))JOptionPane.showMessageDialog(null,msj+"\nGana Jugador: "+player2.getNombre());
-                if(move2.equals("papel"))JOptionPane.showMessageDialog(null,msj+"\nGana Jugador: "+player1.getNombre());
+                if(move2.equals("piedra")){
+                    JOptionPane.showMessageDialog(null,msj+"\nGana Jugador: "+player2.getNombre());
+                    scorep2++;
+                }
+                if(move2.equals("papel")){
+                    JOptionPane.showMessageDialog(null,msj+"\nGana Jugador: "+player1.getNombre());
+                    scorep1++;
+                }
                 break;
             case("piedra"):
-                if(move2.equals("papel"))JOptionPane.showMessageDialog(null,msj+"\nGana Jugador: "+player2.getNombre());
-                if(move2.equals("tijera"))JOptionPane.showMessageDialog(null,msj+"\nGana Jugador: "+player1.getNombre());
+                if(move2.equals("papel")){
+                    JOptionPane.showMessageDialog(null,msj+"\nGana Jugador: "+player2.getNombre());
+                    scorep2++;
+                }
+                if(move2.equals("tijera")){
+                    JOptionPane.showMessageDialog(null,msj+"\nGana Jugador: "+player1.getNombre());
+                    scorep1++;
+                }
                 break;
         }
         menu();
@@ -35,26 +54,24 @@ public class Juego {
     }
     
     public void menu(){
+        JOptionPane.showMessageDialog(null, "Partida Terminada!\n"
+                + "El Jugador1 gano: "+scorep1+"\n"
+                + "El Jugador2 gano: "+scorep2);
         String msj="Presione:\n"
-                + "1-Volver a Jugar\n"                
-                + "2-Salir";
+                + "1-Volver a Jugar\n"                                
+                +"2-Salir";
         String choice=JOptionPane.showInputDialog(msj);
         switch(choice){
-            case("1"):
-                Jugador jugador = new Jugador(JOptionPane.showInputDialog("Ingrese el nombre del pirimer Jugador"));
-                Jugador jugador2 = new Jugador(JOptionPane.showInputDialog("Ingrese el nombre del segundo Jugador"));
-                startRound(jugador, jugador2);
-                break;
+            case("1"):startRound();            
             case("2"):
                 System.exit(0);
         }
     }
     
     public static void main(String[] args) {
-        Jugador jugador = new Jugador("bot");
-        Jugador jugador2 = new Jugador("bot2");
+        
         Juego juego = new Juego();
-        juego.startRound(jugador, jugador2);
+        juego.startRound();
         
     }
     
