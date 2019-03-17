@@ -48,15 +48,20 @@ class Students2019(Students):
         self.rocio().add_exercise('1m2', 8.0)
         self.joaquin().add_exercise('1m2', 10.0)
 
+        self.alex().add_exercise('1o', 10.0)
+        self.belen().add_exercise('1o', 10.0)
+        self.francisco().add_exercise('1o', 10.0)
+        self.diego().add_exercise('1o', 10.0)
+
         # class 2
         self.alex().grade_class(2, 10, 10, 10, 9, 10, 10, 8)
         self.franco().grade_class(2, 10, 10, 3, 1, 0, 0, 1)
-        self.belen().grade_class(2, 10, 10, 10, 8, 0, 0, 1)
+        self.belen().grade_class(2, 10, 10, 10, 8, 10, 10, 1)
         self.federico().grade_class(2, 10, 10, 10, 8, 0, 0, 10)
         self.andres().grade_class(2, 10, 10, 10, 8, 0, 0, 1)
-        self.francisco().grade_class(2, 10, 0, 10, 7, 10, 0, 1)
-        self.diego().grade_class(2, 10, 0, 10, 8, 0, 0, 1)
-        self.damian().grade_class(2, 10, 10, 3, 2, 10, 0, 1)
+        self.francisco().grade_class(2, 10, 0, 10, 7, 10, 10, 1)
+        self.diego().grade_class(2, 10, 0, 10, 8, 10, 10, 1)
+        self.damian().grade_class(2, 10, 10, 3, 2, 0, 0, 1)
         self.rocio().grade_class(2, 10, 10, 10, 6, 0, 0, 1)
         self.joaquin().grade_class(2, 10, 10, 10, 8, 0, 0, 1)
 
