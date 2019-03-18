@@ -24,6 +24,28 @@ class Student:
                 return ex
         return None
 
+    def grades(self):
+        return self._grades
+
+    def class_average(self, class_id):
+        avg = 0.0
+        ex_count = 0
+        for ex in self._exercises:
+            if ex.id().startswith(str(class_id) + 'm') or ex.id().startswith(str(class_id) + 'o'):
+                avg = avg + ex.grade()
+                ex_count = ex_count + 1
+        
+        gradables = 0
+        for v in self._grades[class_id]:
+            if v > 0:
+                gradables = gradables + 1
+                if v > 10:
+                    v = v / 10
+                avg = avg + v
+        
+        avg = avg / (ex_count + gradables)
+        return avg
+
     def grades_average(self):
         avg = 0.0
         for ex in self._exercises:
@@ -105,3 +127,10 @@ class Students:
         ss.sort(reverse=True, key=lambda s: s.grades_average())
         for s in ss:
             print(s.name() + ' (a: ' + str(s.attendance()) + '%; p: ' + str(s.permanence()) + '%): ' + str(s.grades_average()))
+
+    def print_evolution(self):
+        for s in self.students():
+            print(s.name() + ': ', end='')
+            for k, _ in s.grades().items():
+                print(str(s.class_average(k)) + ' ', end='')
+            print('')

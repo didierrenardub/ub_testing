@@ -10,13 +10,15 @@ if __name__ == '__main__':
     t.cell(2, 0).set_text('Perm')
     t.cell(3, 0).set_text('Prom')
 
-    ss = s.students().copy()
-    ss.sort(reverse=True, key=lambda st: st.grades_average())
+    s.students().sort(reverse=True, key=lambda st: st.grades_average())
     cur_row = 1
-    for st in ss:
+    for st in s.students():
         t.cell(0, cur_row).set_text(st.name())
         t.cell(1, cur_row).set_text(str(st.attendance()))
         t.cell(2, cur_row).set_text(str(st.permanence()))
         t.cell(3, cur_row).set_text(str(st.grades_average()))
         cur_row = cur_row + 1
     t.render()
+
+    print('')
+    s.print_evolution()
