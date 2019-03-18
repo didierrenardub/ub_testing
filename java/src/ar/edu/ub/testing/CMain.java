@@ -6,6 +6,7 @@ import ar.edu.ub.testing.ConsoleWarriors.CWarriorBot;
 import ar.edu.ub.testing.Flipboard.CFlipBot;
 import ar.edu.ub.testing.Students.CStudentStatistics;
 import ar.edu.ub.testing.Students.IStudent;
+import ar.edu.ub.testing.TicTacToe.CTicTacBot;
 
 import java.util.Scanner;
 
@@ -82,13 +83,21 @@ public class CMain
         t.play();
     }
 
+    private void tictactoeTournament()
+    {
+        ar.edu.ub.testing.TicTacToe.CTournament t = new ar.edu.ub.testing.TicTacToe.CTournament();
+        t.addPlayer(new CTicTacBot("Aguilera"));
+        t.addPlayer(new CTicTacBot("Greiner"));
+        t.play();
+    }
+
     public static void main(String[] args)
     {
         CMain app = new CMain();
     
-        System.out.println("Choose an action:\n1 - Run exercises\n2 - Students grading\n3 - Console Warriors tournament\n4 - Flipboard tournament");
+        System.out.println("Choose an action:\n1 - Run exercises\n2 - Students grading\n3 - Console Warriors tournament\n4 - Flipboard tournament\n5 - Tic Tac Toe tournament");
     
-        switch(app.userInput(1, 4))
+        switch(app.userInput(1, 5))
         {
             case 1:
                 if(app.stats() != null)
@@ -107,6 +116,10 @@ public class CMain
             
             case 4:
                 app.flipboardTournament();
+            break;
+
+            case 5:
+                app.tictactoeTournament();
             break;
         }
     }
