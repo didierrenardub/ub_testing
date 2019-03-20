@@ -13,6 +13,6 @@ public class GitCommit implements Comando {
 
     @Override
     public void ejecutar(String par) {
-        System.out.println("par");
+        System.out.println("git commit");
     }
 }

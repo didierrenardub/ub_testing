@@ -13,6 +13,6 @@ public class GitPull implements Comando {
 
     @Override
     public void ejecutar(String par) {
-        System.out.println(par);
+        System.out.println("git pull");
     }
 }
