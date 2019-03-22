@@ -72,7 +72,7 @@ class Students2019(Students):
 
         self.alex().add_exercise('2m',      1.0)
         self.franco().add_exercise('2m',    1.0)
-        self.belen().add_exercise('2m',     1.0)
+        self.belen().add_exercise('2m',    10.0)
         self.federico().add_exercise('2m', 10.0)
         self.andres().add_exercise('2m',   10.0)
         self.francisco().add_exercise('2m', 1.0)
