@@ -13,6 +13,7 @@ class Students2019(Students):
         self.add_student('Damian Perez', -1)
         self.add_student('Rocio Rodriguez', -1)
         self.add_student('Joaquin Rodriguez', -1)
+        self.add_student('Gabriel Lozano', -1)
 
         # class 1                       c   a   p  mp  ms  op  os   q
         self.alex().grade_class(        1, 10, 10,  0,  0,  0,  0,  0)
@@ -25,6 +26,7 @@ class Students2019(Students):
         self.damian().grade_class(      1, 10, 10,  0,  0,  0,  0,  0)
         self.rocio().grade_class(       1, 10, 10,  0,  0,  0,  0,  0)
         self.joaquin().grade_class(     1, 10, 10,  0,  0,  0,  0,  0)
+        self.gabriel().grade_class(     1,  1,  0,  0,  0,  0,  0,  0)
 
         self.alex().add_exercise('1m',      7.5)
         self.franco().add_exercise('1m',    3.0)
@@ -36,6 +38,7 @@ class Students2019(Students):
         self.damian().add_exercise('1m',    6.0)
         self.rocio().add_exercise('1m',     4.5)
         self.joaquin().add_exercise('1m',   5.5)
+        self.gabriel().add_exercise('1m',   1.0)
 
         self.alex().add_exercise('1m2',         10.0)
         self.franco().add_exercise('1m2',        1.0)
@@ -47,6 +50,7 @@ class Students2019(Students):
         self.damian().add_exercise('1m2',        1.0)
         self.rocio().add_exercise('1m2',         8.0)
         self.joaquin().add_exercise('1m2',      10.0)
+        self.gabriel().add_exercise('1m2',       1.0)
 
         self.alex().add_exercise('1o',      10.0)
         self.belen().add_exercise('1o',     10.0)
@@ -64,6 +68,7 @@ class Students2019(Students):
         self.damian().grade_class(      2, 10, 10,  3,  2,  0,  0,  1)
         self.rocio().grade_class(       2, 10, 10, 10,  6,  0,  0,  1)
         self.joaquin().grade_class(     2, 10, 10, 10,  8,  0,  0,  1)
+        self.gabriel().grade_class(     2,  1,  0,  0,  0,  0,  0,  0)
 
         self.alex().add_exercise('2m',      1.0)
         self.franco().add_exercise('2m',    1.0)
@@ -75,6 +80,7 @@ class Students2019(Students):
         self.damian().add_exercise('2m',    1.0)
         self.rocio().add_exercise('2m',     7.5)
         self.joaquin().add_exercise('2m',   1.0)
+        self.gabriel().add_exercise('2m',   1.0)
 
         self.alex().add_exercise('2m2',         1.0)
         self.franco().add_exercise('2m2',       1.0)
@@ -84,8 +90,9 @@ class Students2019(Students):
         self.francisco().add_exercise('2m2',    1.0)
         self.diego().add_exercise('2m2',        1.0)
         self.damian().add_exercise('2m2',       1.0)
-        self.rocio().add_exercise('2m2',        1.0)
+        self.rocio().add_exercise('2m2',        6.0)
         self.joaquin().add_exercise('2m2',      1.0)
+        self.gabriel().add_exercise('2m2',      1.0)
 
         # class 3                       c   a   p  mp  ms  op  os   q
         self.alex().grade_class(       3,  0,  0,  5,  3,  0,  0,  0)
@@ -96,8 +103,9 @@ class Students2019(Students):
         self.francisco().grade_class(  3,  0,  0,  1,  0,  0,  0,  0)
         self.diego().grade_class(      3,  0,  0,  1,  0,  0,  0,  0)
         self.damian().grade_class(     3,  0,  0,  1,  0,  0,  0,  0)
-        self.rocio().grade_class(      3,  0,  0,  7,  6,  0,  0,  0)
+        self.rocio().grade_class(      3,  0,  0,  8,  7,  0,  0,  0)
         self.joaquin().grade_class(    3,  0,  0,  1,  0,  0,  0,  0)
+        self.gabriel().grade_class(    3,  0,  0,  1,  0,  0,  0,  0)
 
         # class 4                       c   a   p  mp  ms  op  os   q
         #self.alex().grade_class(       4,  0,  0,  0,  0,  0,  0,  0)
@@ -110,6 +118,7 @@ class Students2019(Students):
         #self.damian().grade_class(     4,  0,  0,  0,  0,  0,  0,  0)
         #self.rocio().grade_class(      4,  0,  0,  0,  0,  0,  0,  0)
         #self.joaquin().grade_class(    4,  0,  0,  0,  0,  0,  0,  0)
+        #self.gabriel().grade_class(    4,  0,  0,  0,  0,  0,  0,  0)
 
         # class 5                       c   a   p  mp  ms  op  os   q
         #self.alex().grade_class(       5,  0,  0,  0,  0,  0,  0,  0)
@@ -122,6 +131,7 @@ class Students2019(Students):
         #self.damian().grade_class(     5,  0,  0,  0,  0,  0,  0,  0)
         #self.rocio().grade_class(      5,  0,  0,  0,  0,  0,  0,  0)
         #self.joaquin().grade_class(    5,  0,  0,  0,  0,  0,  0,  0)
+        #self.gabriel().grade_class(    5,  0,  0,  0,  0,  0,  0,  0)
 
         # class 6                       c   a   p  mp  ms  op  os   q
         #self.alex().grade_class(       6,  0,  0,  0,  0,  0,  0,  0)
@@ -134,6 +144,7 @@ class Students2019(Students):
         #self.damian().grade_class(     6,  0,  0,  0,  0,  0,  0,  0)
         #self.rocio().grade_class(      6,  0,  0,  0,  0,  0,  0,  0)
         #self.joaquin().grade_class(    6,  0,  0,  0,  0,  0,  0,  0)
+        #self.gabriel().grade_class(    6,  0,  0,  0,  0,  0,  0,  0)
 
         # class 7                       c   a   p  mp  ms  op  os   q
         #self.alex().grade_class(       7,  0,  0,  0,  0,  0,  0,  0)
@@ -146,6 +157,7 @@ class Students2019(Students):
         #self.damian().grade_class(     7,  0,  0,  0,  0,  0,  0,  0)
         #self.rocio().grade_class(      7,  0,  0,  0,  0,  0,  0,  0)
         #self.joaquin().grade_class(    7,  0,  0,  0,  0,  0,  0,  0)
+        #self.gabriel().grade_class(    7,  0,  0,  0,  0,  0,  0,  0)
 
         # class 8                       c   a   p  mp  ms  op  os   q
         #self.alex().grade_class(       8,  0,  0,  0,  0,  0,  0,  0)
@@ -158,6 +170,7 @@ class Students2019(Students):
         #self.damian().grade_class(     8,  0,  0,  0,  0,  0,  0,  0)
         #self.rocio().grade_class(      8,  0,  0,  0,  0,  0,  0,  0)
         #self.joaquin().grade_class(    8,  0,  0,  0,  0,  0,  0,  0)
+        #self.gabriel().grade_class(    8,  0,  0,  0,  0,  0,  0,  0)
 
         # class 9                       c   a   p  mp  ms  op  os   q
         #self.alex().grade_class(       9,  0,  0,  0,  0,  0,  0,  0)
@@ -170,6 +183,7 @@ class Students2019(Students):
         #self.damian().grade_class(     9,  0,  0,  0,  0,  0,  0,  0)
         #self.rocio().grade_class(      9,  0,  0,  0,  0,  0,  0,  0)
         #self.joaquin().grade_class(    9,  0,  0,  0,  0,  0,  0,  0)
+        #self.gabriel().grade_class(    9,  0,  0,  0,  0,  0,  0,  0)
 
         # class 10                      c   a   p  mp  ms  op  os   q
         #self.alex().grade_class(      10,  0,  0,  0,  0,  0,  0,  0)
@@ -182,6 +196,7 @@ class Students2019(Students):
         #self.damian().grade_class(    10,  0,  0,  0,  0,  0,  0,  0)
         #self.rocio().grade_class(     10,  0,  0,  0,  0,  0,  0,  0)
         #self.joaquin().grade_class(   10,  0,  0,  0,  0,  0,  0,  0)
+        #self.gabriel().grade_class(   10,  0,  0,  0,  0,  0,  0,  0)
 
         # class 11                      c   a   p  mp  ms  op  os   q
         #self.alex().grade_class(      11,  0,  0,  0,  0,  0,  0,  0)
@@ -194,6 +209,7 @@ class Students2019(Students):
         #self.damian().grade_class(    11,  0,  0,  0,  0,  0,  0,  0)
         #self.rocio().grade_class(     11,  0,  0,  0,  0,  0,  0,  0)
         #self.joaquin().grade_class(   11,  0,  0,  0,  0,  0,  0,  0)
+        #self.gabriel().grade_class(   11,  0,  0,  0,  0,  0,  0,  0)
 
         # class 12                      c   a   p  mp  ms  op  os   q
         #self.alex().grade_class(      12,  0,  0,  0,  0,  0,  0,  0)
@@ -206,6 +222,7 @@ class Students2019(Students):
         #self.damian().grade_class(    12,  0,  0,  0,  0,  0,  0,  0)
         #self.rocio().grade_class(     12,  0,  0,  0,  0,  0,  0,  0)
         #self.joaquin().grade_class(   12,  0,  0,  0,  0,  0,  0,  0)
+        #self.gabriel().grade_class(   12,  0,  0,  0,  0,  0,  0,  0)
 
         # class 13                      c   a   p  mp  ms  op  os   q
         #self.alex().grade_class(      13,  0,  0,  0,  0,  0,  0,  0)
@@ -218,6 +235,7 @@ class Students2019(Students):
         #self.damian().grade_class(    13,  0,  0,  0,  0,  0,  0,  0)
         #self.rocio().grade_class(     13,  0,  0,  0,  0,  0,  0,  0)
         #self.joaquin().grade_class(   13,  0,  0,  0,  0,  0,  0,  0)
+        #self.gabriel().grade_class(   13,  0,  0,  0,  0,  0,  0,  0)
 
         # class 14                      c   a   p  mp  ms  op  os   q
         #self.alex().grade_class(      14,  0,  0,  0,  0,  0,  0,  0)
@@ -230,6 +248,7 @@ class Students2019(Students):
         #self.damian().grade_class(    14,  0,  0,  0,  0,  0,  0,  0)
         #self.rocio().grade_class(     14,  0,  0,  0,  0,  0,  0,  0)
         #self.joaquin().grade_class(   14,  0,  0,  0,  0,  0,  0,  0)
+        #self.gabriel().grade_class(   14,  0,  0,  0,  0,  0,  0,  0)
 
         # class 15                      c   a   p  mp  ms  op  os   q
         #self.alex().grade_class(      15,  0,  0,  0,  0,  0,  0,  0)
@@ -242,6 +261,7 @@ class Students2019(Students):
         #self.damian().grade_class(    15,  0,  0,  0,  0,  0,  0,  0)
         #self.rocio().grade_class(     15,  0,  0,  0,  0,  0,  0,  0)
         #self.joaquin().grade_class(   15,  0,  0,  0,  0,  0,  0,  0)
+        #self.gabriel().grade_class(   15,  0,  0,  0,  0,  0,  0,  0)
 
 
     def alex(self):
@@ -273,3 +293,6 @@ class Students2019(Students):
 
     def joaquin(self):
         return self.student_by_name('Joaquin Rodriguez')
+
+    def gabriel(self):
+        return self.student_by_name('Gabriel Lozano')
