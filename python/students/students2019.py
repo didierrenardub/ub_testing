@@ -71,7 +71,7 @@ class Students2019(Students):
         self.gabriel().grade_class(     2,  1,  0,  0,  0,  0,  0,  0)
 
         self.alex().add_exercise('2m',      1.0)
-        self.franco().add_exercise('2m',    1.0)
+        self.franco().add_exercise('2m',    5.5)
         self.belen().add_exercise('2m',    10.0)
         self.federico().add_exercise('2m', 10.0)
         self.andres().add_exercise('2m',   10.0)
@@ -84,7 +84,7 @@ class Students2019(Students):
 
         self.alex().add_exercise('2m2',         1.0)
         self.franco().add_exercise('2m2',       1.0)
-        self.belen().add_exercise('2m2',        1.0)
+        self.belen().add_exercise('2m2',       10.0)
         self.federico().add_exercise('2m2',     1.0)
         self.andres().add_exercise('2m2',      10.0)
         self.francisco().add_exercise('2m2',    1.0)
@@ -106,6 +106,18 @@ class Students2019(Students):
         self.rocio().grade_class(      3, 10, 10,  8,  7,  0,  0,  5)
         self.joaquin().grade_class(    3,  1,  0,  1,  0,  0,  0,  0)
         self.gabriel().grade_class(    3, 10, 10,  1,  0,  0,  0, 10)
+
+        self.alex().add_exercise('3m',      1.0)
+        self.franco().add_exercise('3m',    1.0)
+        self.belen().add_exercise('3m',     1.0)
+        self.federico().add_exercise('3m',  1.0)
+        self.andres().add_exercise('3m',    1.0)
+        self.francisco().add_exercise('3m', 1.0)
+        self.diego().add_exercise('3m',     1.0)
+        self.damian().add_exercise('3m',    1.0)
+        self.rocio().add_exercise('3m',     1.0)
+        self.joaquin().add_exercise('3m',   1.0)
+        self.gabriel().add_exercise('3m',   1.0)
 
         # class 4                       c   a   p  mp  ms  op  os   q
         #self.alex().grade_class(       4,  0,  0,  0,  0,  0,  0,  0)
