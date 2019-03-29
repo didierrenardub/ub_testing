@@ -135,7 +135,7 @@ class Students2019(Students):
 
         # class 4                       c   a   p  mp  ms  op  os   q
         self.alex().grade_class(       4,  1,  0,  5,  2,  0,  0,  0)
-        self.franco().grade_class(     4,  0,  0,  5,  1,  0,  0,  0)
+        self.franco().grade_class(     4, 10,  0,  5,  1,  0,  0,  0)
         self.belen().grade_class(      4, 10,  0,  5,  4,  0,  0,  0)
         self.federico().grade_class(   4, 10,  0,  5,  2,  0,  0,  0)
         self.andres().grade_class(     4, 10,  0,  5,  3,  0,  0,  0)
@@ -143,7 +143,7 @@ class Students2019(Students):
         self.diego().grade_class(      4,  0,  0, 10,  5,  0,  0,  0)
         self.damian().grade_class(     4, 10,  0,  5,  3,  0,  0,  0)
         self.rocio().grade_class(      4,  0,  0,  5,  3,  0,  0,  0)
-        self.joaquin().grade_class(    4, 10,  0,  0,  0,  0,  0,  0)
+        self.joaquin().grade_class(    4, 10,  0,  1,  0,  0,  0,  0)
         self.gabriel().grade_class(    4,  0,  0,  5,  2,  0,  0,  0)
 
         # class 5                       c   a   p  mp  ms  op  os   q
