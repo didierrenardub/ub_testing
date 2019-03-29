@@ -116,7 +116,7 @@ class Students2019(Students):
         self.andres().add_exercise('3m',    7.0)
         self.francisco().add_exercise('3m', 8.0)
         self.diego().add_exercise('3m',     7.0)
-        self.damian().add_exercise('3m',    1.0)
+        self.damian().add_exercise('3m',    0.5)
         self.rocio().add_exercise('3m',     1.0)
         self.joaquin().add_exercise('3m',   1.0)
         self.gabriel().add_exercise('3m',   7.0)
