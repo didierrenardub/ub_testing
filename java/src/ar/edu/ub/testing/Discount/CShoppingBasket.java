@@ -27,6 +27,11 @@ public class CShoppingBasket
     {
         // TODO: implement
     }
+    
+    public void addItems(Collection<CShoppingBasketItem> items)
+    {
+    	// TODO: implement
+    }
 
     public void removeItem(CShoppingBasketItem item)
     {

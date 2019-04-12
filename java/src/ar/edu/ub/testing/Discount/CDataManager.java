@@ -11,6 +11,7 @@ public class CDataManager
         this.m_products = new ArrayList<>();
         this.m_payments = new ArrayList<>();
         this.m_commerces = new ArrayList<>();
+        this.m_discount = new ArrayList<>();
     }
 
     public Collection<CBrand> brands()
@@ -35,6 +36,12 @@ public class CDataManager
     {
         // TODO: implement
         return null;
+    }
+    
+    public Collection<CDiscount> discounts()
+    {
+    	// TODO: implement
+    	return null;
     }
 
     public void add(CBrand brand)
@@ -76,6 +83,16 @@ public class CDataManager
     {
         // TODO: implement
     }
+    
+    public void add(CDiscount discount)
+    {
+    	// TODO: implement
+    }
+    
+    public void addDiscounts(Collection<CDiscount> discounts)
+    {
+    	// TODO: implement
+    }
 
     public CBrand brand(String withName)
     {
@@ -100,9 +117,16 @@ public class CDataManager
         // TODO: implement
         return null;
     }
+    
+    public CDiscount discount(String withName)
+    {
+    	// TODO: implement
+    	return null;
+    }
 
     private Collection<CBrand> m_brands;
     private Collection<CProduct> m_products;
     private Collection<CPayment> m_payments;
     private Collection<CCommerce> m_commerces;
+    private Collection<CDiscount> m_discount;
 }
