@@ -16,6 +16,16 @@ public class CCommerce
         // TODO: implement
         return null;
     }
+    
+    public void addProduct(CProductInstance productInstace)
+    {
+    	// TODO: implement
+    }
+    
+    public void addProducts(Collection<CProductInstance> productInstances)
+    {
+    	// TODO: implement
+    }
 
     public Collection<CProductInstance> branded(CBrand brand)
     {
@@ -27,6 +37,12 @@ public class CCommerce
     {
         // TODO: implement
         return null;
+    }
+    
+    public CProductInstance product(String withName)
+    {
+    	// TODO: implement
+    	return null;
     }
 
     private String m_name;
