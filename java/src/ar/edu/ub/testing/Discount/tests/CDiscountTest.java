@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package ar.edu.ub.testing.Discount.tests;
-
 import ar.edu.ub.testing.Discount.CDiscount;
 import ar.edu.ub.testing.Discount.CShoppingBasket;
 import ar.edu.ub.testing.Discount.CShoppingBasketItem;
@@ -78,5 +77,5 @@ public class CDiscountTest {
         assertNotNull(disTest.apply(bask));
     }
     CDiscount disTest;
-    
+
 }
