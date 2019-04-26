@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Discount;
+package ar.edu.ub.testing.Discount.tests;
 
 import ar.edu.ub.testing.Discount.CDiscount;
 import ar.edu.ub.testing.Discount.CShoppingBasket;
