@@ -28,7 +28,7 @@ class CProductInstanceTest {
 		float precioTest = 35;
 		CBrand brandTest = new CBrand("brandTest");
 		ArrayList<String> arrayTest = new ArrayList();
-		CProduct producTest = new CProduct(brandTest,arrayTest, "nombre", "descripcion");
+		producTest = new CProduct(brandTest,arrayTest, "nombre", "descripcion");
 		CProductInstance producInstanceTest = new CProductInstance(producTest, precioTest);
 		
 	}

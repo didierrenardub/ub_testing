@@ -2,7 +2,6 @@
 package ar.edu.ub.testing.Discount.tests;
 
 import ar.edu.ub.testing.Discount.CPayment;
-import ar.edu.ub.testing.Discount.CProduct;
 import ar.edu.ub.testing.Discount.CProductInstance;
 import ar.edu.ub.testing.Discount.CShoppingBasketItem;
 import org.junit.After;
@@ -10,7 +9,6 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 public class BasketItemTest {
     

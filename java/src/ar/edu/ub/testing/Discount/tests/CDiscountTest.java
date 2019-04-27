@@ -33,10 +33,7 @@ public class CDiscountTest {
     
     @Before
     public void setUp() {
-        
         disTest = new CDiscount("name", "description", true, null);
-        
-        
     }
     
     @After

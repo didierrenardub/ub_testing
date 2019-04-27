@@ -18,6 +18,7 @@ import ar.edu.ub.testing.Discount.CProductInstance;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class CCommerceTest {
 
