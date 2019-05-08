@@ -1,3 +1,5 @@
+package ar.edu.ub.testing.Discount.tests;
+
 import ar.edu.ub.testing.Discount.CBrand;
 import ar.edu.ub.testing.Discount.CDiscountConditionAnd;
 import ar.edu.ub.testing.Discount.CDiscountConditionPayment;

@@ -6,6 +6,8 @@ import ar.edu.ub.testing.Discount.CProductInstance;
 import ar.edu.ub.testing.Discount.CShoppingBasketItem;
 import org.junit.After;
 import org.junit.AfterClass;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;

@@ -5,7 +5,7 @@ import java.util.Collection;
 
 public class CShoppingBasket
 {
-    public CShoppingBasket()
+    public CShoppingBasket() throws NullPointerException
     {
         this.m_items = new ArrayList<>();
         this.m_discounts = new ArrayList<>();

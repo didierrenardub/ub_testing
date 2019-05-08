@@ -1,8 +1,10 @@
 package ar.edu.ub.testing.Discount.tests;
 
 import ar.edu.ub.testing.Discount.CBrand;
+import ar.edu.ub.testing.Discount.CDataManager;
 import ar.edu.ub.testing.Discount.CDiscount;
 import ar.edu.ub.testing.Discount.CProduct;
+import ar.edu.ub.testing.Discount.CProductInstance;
 import ar.edu.ub.testing.Discount.CShoppingBasket;
 import ar.edu.ub.testing.Discount.CShoppingBasketItem;
 import java.util.Collection;
@@ -12,6 +14,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.jupiter.api.Assertions;
 
 public class ShoppingBasketTest {
     
@@ -28,11 +31,11 @@ public class ShoppingBasketTest {
     
     @Before
     public void setUp() {
-        basket=null;
-        bItem=null;
-        prod=null;
-        brand=null;
-        disc=null;
+        data= new CTestData();
+        manager = data.manager("default");
+        basket=new CShoppingBasket();
+        brand=manager.brand("Bagley");
+        disc= manager.discount("Rebaja 5%");
         listProd=null;
     }
     
@@ -40,14 +43,25 @@ public class ShoppingBasketTest {
     public void tearDown() {
     }
 
+    
    
+    @Test
+    public void testAddProduct(){
+        CShoppingBasketItem testItem=new CShoppingBasketItem(manager.payment("Credito"),new CProductInstance(manager.product("Melba"), 2), 15);
+        basket.addItem(testItem);
+        assertNotEquals(false,basket.items().contains(testItem));
+    }
+    
     /*
     Metodo que testea el constructor de ShopingBasket. Como no se pasan parametros,
     el constructor resuelve todo solo no hay mucho para testear.
     */
     @Test
     public void createBasket(){
-         assertNotEquals(null,new CShoppingBasket());
+        CShoppingBasket thisBasket = new CShoppingBasket();
+        
+        
+        
     }
     
     /*
@@ -199,5 +213,7 @@ public class ShoppingBasketTest {
     private CBrand brand;
     private CDiscount disc;
     private Collection<CShoppingBasketItem> listProd;
+    private CTestData data;
+    private CDataManager manager;
     
 }
