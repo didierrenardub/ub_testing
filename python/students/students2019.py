@@ -261,18 +261,18 @@ class Students2019(Students):
         self.joaquin().grade_class(   12, 10, 10,  0,  0,  0,  0,  0)
         self.gabriel().grade_class(   12,  1,  0,  0,  0,  0,  0,  0)
 
-        # class 13                      c   a   p  mp  ms  op  os   q
-        #self.alex().grade_class(      13,  0,  0,  0,  0,  0,  0,  0)
-        #self.franco().grade_class(    13,  0,  0,  0,  0,  0,  0,  0)
-        #self.belen().grade_class(     13,  0,  0,  0,  0,  0,  0,  0)
-        #self.federico().grade_class(  13,  0,  0,  0,  0,  0,  0,  0)
-        #self.andres().grade_class(    13,  0,  0,  0,  0,  0,  0,  0)
-        #self.francisco().grade_class( 13,  0,  0,  0,  0,  0,  0,  0)
-        #self.diego().grade_class(     13,  0,  0,  0,  0,  0,  0,  0)
-        #self.damian().grade_class(    13,  0,  0,  0,  0,  0,  0,  0)
-        #self.rocio().grade_class(     13,  0,  0,  0,  0,  0,  0,  0)
-        #self.joaquin().grade_class(   13,  0,  0,  0,  0,  0,  0,  0)
-        #self.gabriel().grade_class(   13,  0,  0,  0,  0,  0,  0,  0)
+        # class 13                     c   a   p  mp  ms  op  os   q
+        self.alex().grade_class(      13, 10, 10,  0,  0,  0,  0,  0)
+        self.franco().grade_class(    13,  1,  0,  0,  0,  0,  0,  0)
+        self.belen().grade_class(     13, 10, 10,  0,  0,  0,  0,  0)
+        self.federico().grade_class(  13, 10, 10,  0,  0,  0,  0,  0)
+        self.andres().grade_class(    13, 10, 10,  0,  0,  0,  0,  0)
+        self.francisco().grade_class( 13, 10, 10,  0,  0,  0,  0,  0)
+        self.diego().grade_class(     13, 10, 10,  0,  0,  0,  0,  0)
+        self.damian().grade_class(    13,  1,  0,  0,  0,  0,  0,  0)
+        self.rocio().grade_class(     13, 10, 10,  0,  0,  0,  0,  0)
+        self.joaquin().grade_class(   13, 10, 10,  0,  0,  0,  0,  0)
+        self.gabriel().grade_class(   13,  1,  0,  0,  0,  0,  0,  0)
 
         # class 14                      c   a   p  mp  ms  op  os   q
         #self.alex().grade_class(      14,  0,  0,  0,  0,  0,  0,  0)
