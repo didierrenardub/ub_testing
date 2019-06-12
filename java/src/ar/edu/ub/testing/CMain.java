@@ -5,7 +5,7 @@ import ar.edu.ub.testing.ConsoleWarriors.CTournament;
 import ar.edu.ub.testing.ConsoleWarriors.CWarriorBot;
 import ar.edu.ub.testing.Flipboard.CFlipBot;
 import ar.edu.ub.testing.Students.CStudentStatistics;
-import ar.edu.ub.testing.Students.IStudent;
+import ar.edu.ub.testing.Students.base.IStudent;
 import ar.edu.ub.testing.TicTacToe.CTicTacBot;
 
 import java.util.Scanner;
@@ -29,7 +29,7 @@ public class CMain
             System.out.println("Average grades and points:");
             for(IStudent s : stats().students())
             {
-                System.out.println("\t" + s.name() + " (" + s.points() + "/" + s.earnedPoints() + "): " + s.gradesAverage());
+                System.out.println("\t" + s.name() + ": " + s.gradesAverage());
             }
         }
     }

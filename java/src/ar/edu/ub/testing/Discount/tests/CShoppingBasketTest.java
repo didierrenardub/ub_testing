@@ -7,13 +7,8 @@ import java.util.Arrays;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import ar.edu.ub.testing.Discount.CBrand;
-import ar.edu.ub.testing.Discount.CProduct;
-import ar.edu.ub.testing.Discount.CProductInstance;
 import ar.edu.ub.testing.Discount.CShoppingBasket;
 import ar.edu.ub.testing.Discount.CShoppingBasketItem;
-import ar.edu.ub.testing.Discount.CPayment;
-import ar.edu.ub.testing.Discount.CCommerce;
 import ar.edu.ub.testing.Discount.CDataManager;
 
 class CShoppingBasketTest
