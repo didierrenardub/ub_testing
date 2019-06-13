@@ -20,6 +20,7 @@ public abstract class CJavaTier1Exercise2BasicConditions extends CExercise
      * @return The number multiplied by 2 if odd, or the same number if even.
      */
     public abstract int makeEven(int number);
+    public abstract int makePositive(int number);
 
     public final List<CTestOutput> run()
     {

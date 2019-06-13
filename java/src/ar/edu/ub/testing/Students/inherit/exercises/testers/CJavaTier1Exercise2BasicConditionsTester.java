@@ -13,12 +13,13 @@ public class CJavaTier1Exercise2BasicConditionsTester
     {
         List<CTestOutput> o = new ArrayList<>();
 
-        this.testAdd(o, ex);
+        this.testMakeEven(o, ex);
+        this.testMakePositive(o, ex);
 
         return o;
     }
 
-    private void testAdd(List<CTestOutput> o, CJavaTier1Exercise2BasicConditions ex)
+    private void testMakeEven(List<CTestOutput> o, CJavaTier1Exercise2BasicConditions ex)
     {
         List<List<Integer>> addTests = Arrays.asList(
                 Arrays.asList(1, 10, -1,  -5, 33), // a parameter
@@ -49,5 +50,38 @@ public class CJavaTier1Exercise2BasicConditionsTester
             }
         }
         o.add(new CTestOutput("Score for CJT1E2::makeEven tests: " + score / addTests.get(0).size()));
+    }
+
+    private void testMakePositive(List<CTestOutput> o, CJavaTier1Exercise2BasicConditions ex)
+    {
+        List<List<Integer>> addTests = Arrays.asList(
+                Arrays.asList(1, 10, -1,  -5, 33, -100, 1024, -666), // a parameter
+                Arrays.asList(1, 10,  1,   5, 33,  100, 1024,  666) // expected result
+        );
+
+        float score = 0;
+        for(int i = 0; i < addTests.get(0).size(); i++)
+        {
+            int result = -66;
+
+            try
+            {
+                result = ex.makePositive(addTests.get(0).get(i));
+            }
+            catch(Exception e)
+            {
+                o.add(new CTestOutput("CJT1E2::makePositive WARNING Exception thrown: " + e.getMessage()));
+            }
+
+            if(result != addTests.get(1).get(i))
+            {
+                o.add(new CTestOutput("CJT1E2::makePositive FAILED at making " + addTests.get(0).get(i) + " positive; expected " + addTests.get(1).get(i) + ", got " + result));
+            }
+            else
+            {
+                score += 10;
+            }
+        }
+        o.add(new CTestOutput("Score for CJT1E2::makePositive tests: " + score / addTests.get(0).size()));
     }
 }
