@@ -41,19 +41,19 @@ public class CJavaTier1Exercise1ArithmeticOperationsTester
             }
             catch(Exception e)
             {
-                o.add(new CTestOutput("CExerciseTier1::add WARNING Exception thrown: " + e.getMessage()));
+                o.add(new CTestOutput("CJT1E1::add WARNING Exception thrown: " + e.getMessage()));
             }
 
             if(result != addTests.get(2).get(i))
             {
-                o.add(new CTestOutput("CExerciseTier1::add FAILED at adding " + addTests.get(1).get(i) + " to " + addTests.get(0).get(i) + "; expected " + addTests.get(2).get(i) + ", got " + result));
+                o.add(new CTestOutput("CJT1E1::add FAILED at adding " + addTests.get(1).get(i) + " to " + addTests.get(0).get(i) + "; expected " + addTests.get(2).get(i) + ", got " + result));
             }
             else
             {
                 score += 10;
             }
         }
-        o.add(new CTestOutput("Score for CExerciseTier1::add tests: " + score / addTests.get(0).size()));
+        o.add(new CTestOutput("Score for CJT1E1::add tests: " + score / addTests.get(0).size()));
     }
 
     private void testSubtract(List<CTestOutput> o, CJavaTier1Exercise1ArithmeticOperations ex)
@@ -75,19 +75,19 @@ public class CJavaTier1Exercise1ArithmeticOperationsTester
             }
             catch(Exception e)
             {
-                o.add(new CTestOutput("CExerciseTier1::subtract WARNING Exception thrown: " + e.getMessage()));
+                o.add(new CTestOutput("CJT1E1::subtract WARNING Exception thrown: " + e.getMessage()));
             }
 
             if(result != subtractTests.get(2).get(i))
             {
-                o.add(new CTestOutput("CExerciseTier1::subtract FAILED at subtracting " + subtractTests.get(1).get(i) + " from " + subtractTests.get(0).get(i) + "; expected " + subtractTests.get(2).get(i) + ", got " + result));
+                o.add(new CTestOutput("CJT1E1::subtract FAILED at subtracting " + subtractTests.get(1).get(i) + " from " + subtractTests.get(0).get(i) + "; expected " + subtractTests.get(2).get(i) + ", got " + result));
             }
             else
             {
                 score += 10;
             }
         }
-        o.add(new CTestOutput("Score for CExerciseTier1::subtract tests: " + score / subtractTests.get(0).size()));
+        o.add(new CTestOutput("Score for CJT1E1::subtract tests: " + score / subtractTests.get(0).size()));
     }
 
     private void testMultiply(List<CTestOutput> o, CJavaTier1Exercise1ArithmeticOperations ex)
@@ -109,19 +109,19 @@ public class CJavaTier1Exercise1ArithmeticOperationsTester
             }
             catch(Exception e)
             {
-                o.add(new CTestOutput("CExerciseTier1::multiply WARNING Exception thrown: " + e.getMessage()));
+                o.add(new CTestOutput("CJT1E1::multiply WARNING Exception thrown: " + e.getMessage()));
             }
 
             if(result != multiplyTests.get(2).get(i))
             {
-                o.add(new CTestOutput("CExerciseTier1::multiply FAILED at multiplying " + multiplyTests.get(0).get(i) + " by " + multiplyTests.get(1).get(i) + "; expected " + multiplyTests.get(2).get(i) + ", got " + result));
+                o.add(new CTestOutput("CJT1E1::multiply FAILED at multiplying " + multiplyTests.get(0).get(i) + " by " + multiplyTests.get(1).get(i) + "; expected " + multiplyTests.get(2).get(i) + ", got " + result));
             }
             else
             {
                 score += 10;
             }
         }
-        o.add(new CTestOutput("Score for CExerciseTier1::multiply tests: " + score / multiplyTests.get(0).size()));
+        o.add(new CTestOutput("Score for CJT1E1::multiply tests: " + score / multiplyTests.get(0).size()));
     }
 
     private void testDivide(List<CTestOutput> o, CJavaTier1Exercise1ArithmeticOperations ex)
@@ -147,19 +147,19 @@ public class CJavaTier1Exercise1ArithmeticOperationsTester
             }
             catch(Exception e)
             {
-                o.add(new CTestOutput("CExerciseTier1::divide WARNING Exception thrown: " + e.getMessage()));
+                o.add(new CTestOutput("CJT1E1::divide WARNING Exception thrown: " + e.getMessage()));
             }
 
             if(result != divideTests.get(2).get(i))
             {
-                o.add(new CTestOutput("CExerciseTier1::divide FAILED at dividing " + divideTests.get(0).get(i) + " by " + divideTests.get(1).get(i) + "; expected " + divideTests.get(2).get(i) + ", got " + result));
+                o.add(new CTestOutput("CJT1E1::divide FAILED at dividing " + divideTests.get(0).get(i) + " by " + divideTests.get(1).get(i) + "; expected " + divideTests.get(2).get(i) + ", got " + result));
             }
             else
             {
                 score += 10;
             }
         }
-        o.add(new CTestOutput("Score for CExerciseTier1::divide tests: " + score / divideTests.get(0).size()));
+        o.add(new CTestOutput("Score for CJT1E1::divide tests: " + score / divideTests.get(0).size()));
     }
 
     private void testSquarePower(List<CTestOutput> o, CJavaTier1Exercise1ArithmeticOperations ex)
@@ -180,18 +180,18 @@ public class CJavaTier1Exercise1ArithmeticOperationsTester
             }
             catch(Exception e)
             {
-                o.add(new CTestOutput("CExerciseTier1::squarePower WARNING Exception thrown: " + e.getMessage()));
+                o.add(new CTestOutput("CJT1E1::squarePower WARNING Exception thrown: " + e.getMessage()));
             }
 
             if(result != squarePowerTests.get(2).get(i))
             {
-                o.add(new CTestOutput("CExerciseTier1::squarePower FAILED at powering " + squarePowerTests.get(0).get(i) + " by 2; expected " + squarePowerTests.get(1).get(i) + ", got " + result));
+                o.add(new CTestOutput("CJT1E1::squarePower FAILED at powering " + squarePowerTests.get(0).get(i) + " by 2; expected " + squarePowerTests.get(1).get(i) + ", got " + result));
             }
             else
             {
                 score += 10;
             }
         }
-        o.add(new CTestOutput("Score for CExerciseTier1::squarePower tests: " + score / squarePowerTests.get(0).size()));
+        o.add(new CTestOutput("Score for CJT1E1::squarePower tests: " + score / squarePowerTests.get(0).size()));
     }
 }

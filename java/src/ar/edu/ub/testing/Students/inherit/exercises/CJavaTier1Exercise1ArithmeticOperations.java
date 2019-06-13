@@ -4,8 +4,6 @@ import ar.edu.ub.testing.Students.base.CExercise;
 import ar.edu.ub.testing.Students.base.CTestOutput;
 import ar.edu.ub.testing.Students.inherit.exercises.testers.CJavaTier1Exercise1ArithmeticOperationsTester;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public abstract class CJavaTier1Exercise1ArithmeticOperations extends CExercise
