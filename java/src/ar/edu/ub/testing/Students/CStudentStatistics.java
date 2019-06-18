@@ -1,5 +1,8 @@
 package ar.edu.ub.testing.Students;
 
+import ar.edu.ub.testing.Students.base.IExercise;
+import ar.edu.ub.testing.Students.base.IStudent;
+
 import java.util.ArrayList;
 
 /**
@@ -74,45 +77,15 @@ public class CStudentStatistics
     }
 
     /**
-     * Computes the percentage of completion of the given exercise among all students.
-     *
-     * @param forExercise The exercise to be computed.
-     * @return The percentage of completion for that exercise.
-     */
-    public float exerciseCompletion(IExercise.ID forExercise)
-    {
-        int totalExercises = students().size() * IExercise.ID.EXERCISE_COUNT.ordinal();
-        int completedExercises = 0;
-        
-        for(IStudent s : students())
-        {
-            IExercise e = s.exercise(forExercise);
-            
-            if(e != null)
-            {
-                completedExercises++;
-            }
-        }
-
-        return (float)completedExercises / (float)totalExercises * 100.0f;
-    }
-
-    /**
      * Computes the percentage of completion of all exercises among all students.
      *
      * @return The percentage of completion of all exercises among all students.
      */
     public float exercisesCompletion()
     {
-        int totalExercises = students().size() * IExercise.ID.EXERCISE_COUNT.ordinal();
+        int totalExercises = students().size();
         float totalCompletion = totalExercises * 100.0f;
         float completion = 0.0f;
-
-        for(int i = 0; i < IExercise.ID.EXERCISE_COUNT.ordinal(); i++)
-        {
-            completion += exerciseCompletion(IExercise.ID.values()[i]);
-        }
-
         return completion / totalCompletion * 100.0f;
     }
     
@@ -121,22 +94,11 @@ public class CStudentStatistics
         for(IStudent s : students())
         {
             System.out.println("Running exercises from " + s.name());
-            for(int i = 0; i < IExercise.ID.EXERCISE_COUNT.ordinal(); i++)
+            for(IExercise e : s.exercises())
             {
-                IExercise e = s.exercise(IExercise.ID.values()[i]);
-            
                 System.out.println("---------------------------------------------------");
-                System.out.print("Exercise " + IExercise.ID.values()[i].name() + "... ");
-            
-                if(e != null)
-                {
-                    System.out.println("running: ");
-                    e.run();
-                }
-                else
-                {
-                    System.out.println("NOT FOUND");
-                }
+                System.out.println("Exercise " + e.name() + " running:");
+                e.run();
             }
             System.out.println("===================================================");
         }
