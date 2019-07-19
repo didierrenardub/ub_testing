@@ -1,6 +1,7 @@
 package ar.edu.ub.pcsw;
 
 import ar.edu.ub.IMain;
+import ar.edu.ub.pcsw.designPatterns.demos.CFactoryDemo;
 import ar.edu.ub.pcsw.designPatterns.demos.CNullObjectDemo;
 import ar.edu.ub.pcsw.designPatterns.demos.CSingletonDemo;
 import ar.edu.ub.pcsw.designPatterns.demos.IDemo;
@@ -16,6 +17,7 @@ public class CPCSWMain extends IMain
         List<IDemo> demos = Arrays.asList(
                 new CNullObjectDemo()
                 , new CSingletonDemo()
+                , new CFactoryDemo()
         );
 
         StringBuilder prompt = new StringBuilder();
