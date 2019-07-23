@@ -1,8 +1,8 @@
 package ar.edu.ub.pcsw.designPatterns.demos;
 
-import ar.edu.ub.pcsw.designPatterns.command.CPrintStrategyKanji;
-import ar.edu.ub.pcsw.designPatterns.command.CPrintStrategyCommon;
-import ar.edu.ub.pcsw.designPatterns.command.CPrinter;
+import ar.edu.ub.pcsw.designPatterns.strategy.CPrintStrategyKanji;
+import ar.edu.ub.pcsw.designPatterns.strategy.CPrintStrategyCommon;
+import ar.edu.ub.pcsw.designPatterns.strategy.CPrinter;
 
 public class CStrategyDemo extends CDemoBase
 {

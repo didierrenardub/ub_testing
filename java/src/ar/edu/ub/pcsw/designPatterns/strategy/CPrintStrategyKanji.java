@@ -1,4 +1,4 @@
-package ar.edu.ub.pcsw.designPatterns.command;
+package ar.edu.ub.pcsw.designPatterns.strategy;
 
 import java.util.ArrayList;
 
