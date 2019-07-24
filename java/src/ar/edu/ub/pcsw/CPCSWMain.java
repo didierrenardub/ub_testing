@@ -19,6 +19,7 @@ public class CPCSWMain extends IMain
                 , new CAdapterDemo()
                 , new CStrategyDemo()
                 , new CCommandDemo()
+                , new CProxyDemo()
         );
 
         StringBuilder prompt = new StringBuilder();
