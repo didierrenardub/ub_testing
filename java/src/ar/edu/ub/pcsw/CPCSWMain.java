@@ -21,6 +21,7 @@ public class CPCSWMain extends IMain
                 , new CCommandDemo()
                 , new CProxyDemo()
                 , new CObserverDemo()
+                , new CDecoratorDemo()
         );
 
         StringBuilder prompt = new StringBuilder();
