@@ -7,6 +7,14 @@ public class CPrintStrategyKanji implements IPrintStrategy
     @Override
     public void run(String what)
     {
+        for(StringBuilder sb : this.kanjirize(what))
+        {
+            System.out.println(sb.toString());
+        }
+    }
+
+    public ArrayList<StringBuilder> kanjirize(String what)
+    {
         int rows = (int)Math.ceil(Math.sqrt(what.length()));
         ArrayList<StringBuilder> lines = new ArrayList<>();
         int columns = (int)Math.ceil(what.length() / (float)rows);
@@ -33,9 +41,6 @@ public class CPrintStrategyKanji implements IPrintStrategy
             }
         }
 
-        for(StringBuilder sb : lines)
-        {
-            System.out.println(sb.toString());
-        }
+        return lines;
     }
 }
