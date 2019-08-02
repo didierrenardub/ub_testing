@@ -23,6 +23,7 @@ public class CPCSWMain extends IMain
                 , new CObserverDemo()
                 , new CDecoratorDemo()
                 , new CObjectPoolDemo()
+                , new CCompositeDemo()
         );
 
         StringBuilder prompt = new StringBuilder();
