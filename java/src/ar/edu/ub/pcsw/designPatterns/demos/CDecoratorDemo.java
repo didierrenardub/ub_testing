@@ -26,13 +26,13 @@ public class CDecoratorDemo implements IDemo
                 "shove it up your GLass"
             );
 
-        this.runFilter("Just filtering out vowels:", new CStringFilterVowerls(null), strings);
+        this.runFilter("Just filtering out vowels:", new CStringFilterVowels(null), strings);
         this.runFilter("Just filtering out 'is':", new CStringFilterExpression(null, "is"), strings);
         this.runFilter("Just filtering out uppercase letters:", new CStringFilterUpperCase(null), strings);
         this.runFilter("Making everything geringoso:", new CStringFilterGeringoso(null), strings);
-        this.runFilter("Filtering vowels+uppercase:", new CStringFilterUpperCase(new CStringFilterVowerls(null)), strings);
+        this.runFilter("Filtering vowels+uppercase:", new CStringFilterUpperCase(new CStringFilterVowels(null)), strings);
         this.runFilter("Making it geringoso and filtering out 'epe':", new CStringFilterExpression(new CStringFilterGeringoso(null), "epe"), strings);
-        this.runFilter("Applying ALL filters:", new CStringFilterVowerls(new CStringFilterUpperCase(new CStringFilterExpression(new CStringFilterGeringoso(null), "ipi"))), strings);
+        this.runFilter("Applying ALL filters:", new CStringFilterVowels(new CStringFilterUpperCase(new CStringFilterExpression(new CStringFilterGeringoso(null), "ipi"))), strings);
     }
 
     public void runFilter(String caption, IStringFilter f, List<String> where)
