@@ -32,7 +32,7 @@ public class LogMessageFormatterSimple implements LogMessageFormatter
             {
                 result.append("[???.java");
             }
-            else if(result.indexOf("|") == -1)
+            else if(result.indexOf(".java") == -1)
             {
                 result.append(" | ???.java");
             }

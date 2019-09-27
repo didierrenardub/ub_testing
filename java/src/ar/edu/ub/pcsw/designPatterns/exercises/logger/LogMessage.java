@@ -61,8 +61,8 @@ public class LogMessage
         return this.m_formatter.format(this);
     }
 
-    private String m_text;
-    private ArrayList<LogInfo> m_info;
-    private LogInfoEmpty m_empty;
-    private LogMessageFormatter m_formatter;
+    protected String m_text;
+    protected ArrayList<LogInfo> m_info;
+    protected LogInfoEmpty m_empty;
+    protected LogMessageFormatter m_formatter;
 }

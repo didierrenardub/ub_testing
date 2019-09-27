@@ -1,5 +1,7 @@
 package ar.edu.ub.pcsw.designPatterns.exercises.logger;
 
+import org.json.JSONObject;
+
 public class LogMessageProvider
 {
     public LogMessageProvider()
@@ -57,6 +59,12 @@ public class LogMessageProvider
     public LogMessageProvider add(LogInfo info)
     {
         this.m_current.addInfo(info);
+        return this;
+    }
+
+    public LogMessageProvider fromJson(JSONObject j)
+    {
+        this.reset(new LogMessageTranslator().translate(j));
         return this;
     }
 
