@@ -3,9 +3,9 @@ package ar.edu.ub.pcsw.designPatterns.decorator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CStringFilterVowerls extends CStringFilterBase
+public class CStringFilterVowels extends CStringFilterBase
 {
-    public CStringFilterVowerls(IStringFilter other)
+    public CStringFilterVowels(IStringFilter other)
     {
         super(other);
     }
