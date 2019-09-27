@@ -18,7 +18,8 @@ public class LogInfoLine implements LogInfo
         StackTraceElement[] trace = Thread.currentThread().getStackTrace();
         for(StackTraceElement element : trace)
         {
-            if(!element.getFileName().contains("Log"))
+            String fn = element.getFileName();
+            if((!fn.contains("Log") || fn.equalsIgnoreCase("LoggerMain.java")) && !fn.contains("Thread"))
             {
                 return "" + element.getLineNumber();
             }
