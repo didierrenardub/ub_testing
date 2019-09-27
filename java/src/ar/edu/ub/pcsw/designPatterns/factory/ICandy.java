@@ -6,4 +6,6 @@ public interface ICandy
     String description();
     String flavor();
     float price();
+    void setPrice(float price);
+    ICandy cloneCandy();
 }

@@ -24,4 +24,10 @@ public class CCandyLipoSuperacido extends CCandyBase
     {
         return "Sour";
     }
+    
+    @Override
+    public ICandy cloneCandy()
+    {
+        return new CCandyLipoSuperacido(this.price());
+    }
 }

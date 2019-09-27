@@ -14,6 +14,12 @@ public abstract class CCandyBase implements ICandy
     }
 
     @Override
+    public void setPrice(float price)
+    {
+        this.m_price = price;
+    }
+
+    @Override
     public String toString()
     {
         return this.name() + " (" + description() + "), priced " + this.price();

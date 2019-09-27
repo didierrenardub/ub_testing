@@ -24,4 +24,10 @@ public class CCandyButterToffee extends CCandyBase
     {
         return "Sweet milk";
     }
+    
+    @Override
+    public ICandy cloneCandy()
+    {
+        return new CCandyButterToffee(this.price());
+    }
 }

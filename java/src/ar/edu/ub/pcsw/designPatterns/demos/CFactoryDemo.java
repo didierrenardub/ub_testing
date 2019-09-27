@@ -1,7 +1,6 @@
 package ar.edu.ub.pcsw.designPatterns.demos;
 
-import ar.edu.ub.pcsw.designPatterns.factory.CCandyFactory;
-import ar.edu.ub.pcsw.designPatterns.factory.ICandy;
+import ar.edu.ub.pcsw.designPatterns.factory.*;
 
 public class CFactoryDemo extends CDemoBase
 {
@@ -15,6 +14,9 @@ public class CFactoryDemo extends CDemoBase
     public void run()
     {
         CCandyFactory factory = new CCandyFactory();
+        factory.addCandy(new CCandySugus(0.0f));
+        factory.addCandy(new CCandyButterToffee(0.0f));
+        factory.addCandy(new CCandyLipoSuperacido(0.0f));
         String i = "";
         System.out.println("Enter a candy name to create one, type 'exit' to quit:");
         while(!(i = this.readString()).equalsIgnoreCase("exit"))

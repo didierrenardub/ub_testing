@@ -24,4 +24,10 @@ public class CCandySugus extends CCandyBase
     {
         return "Many";
     }
+    
+    @Override
+    public ICandy cloneCandy()
+    {
+        return new CCandySugus(this.price());
+    }
 }
