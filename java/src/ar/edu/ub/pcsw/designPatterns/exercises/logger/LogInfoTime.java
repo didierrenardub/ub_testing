@@ -1,16 +1,16 @@
-package ar.edu.ub.pcsw.designPatterns.exercises;
+package ar.edu.ub.pcsw.designPatterns.exercises.logger;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class LogInfoDate implements LogInfo
+public class LogInfoTime implements LogInfo
 {
-    public LogInfoDate(Date date)
+    public LogInfoTime(Date date)
     {
         this.m_date = date;
     }
 
-    public LogInfoDate()
+    public LogInfoTime()
     {
         this(new Date());
     }
@@ -18,13 +18,13 @@ public class LogInfoDate implements LogInfo
     @Override
     public String key()
     {
-        return "date";
+        return "time";
     }
 
     @Override
     public String data()
     {
-        return new SimpleDateFormat("YYYY-MM-dd").format(this.m_date);
+        return new SimpleDateFormat("HH:mm:ss").format(this.m_date);
     }
 
     private Date m_date;
