@@ -2,6 +2,8 @@ package ar.edu.ub.pcsw;
 
 import ar.edu.ub.IMain;
 import ar.edu.ub.pcsw.designPatterns.exercises.logger.LoggerMain;
+import ar.edu.ub.pcsw.designPatterns.exercises.string.StringExtenderMain;
+import ar.edu.ub.pcsw.designPatterns.exercises.threads.ThreadsMain;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,7 +14,9 @@ public class CPCSWExercisesMain extends IMain
     public void run(String[] args)
     {
         List<IMain> exercises = Arrays.asList(
-                new LoggerMain()
+                new LoggerMain(),
+                new StringExtenderMain(),
+                new ThreadsMain()
         );
 
         StringBuilder prompt = new StringBuilder();
