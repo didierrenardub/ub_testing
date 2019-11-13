@@ -1,7 +1,8 @@
 package ar.edu.ub.pcsw.designPatterns.exercises.racers.carParts.direction;
 
-public class CarPartDirectionFair extends CarPartDirectionBase
-{
+import ar.edu.ub.pcsw.designPatterns.exercises.racers.carParts.CarPartBase;
+
+public class CarPartDirectionFair extends CarPartBase implements CarPartDirection {
     public CarPartDirectionFair(int antiquity, float quality)
     {
         super(antiquity, quality);

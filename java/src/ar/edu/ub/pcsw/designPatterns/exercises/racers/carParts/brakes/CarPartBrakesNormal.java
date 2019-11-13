@@ -1,6 +1,8 @@
 package ar.edu.ub.pcsw.designPatterns.exercises.racers.carParts.brakes;
 
-public class CarPartBrakesNormal extends CarPartBrakesBase
+import ar.edu.ub.pcsw.designPatterns.exercises.racers.carParts.CarPartBase;
+
+public class CarPartBrakesNormal extends CarPartBase implements CarPartBrakes
 {
     public CarPartBrakesNormal(int antiquity, float quality)
     {

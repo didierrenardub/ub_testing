@@ -1,6 +1,8 @@
 package ar.edu.ub.pcsw.designPatterns.exercises.racers.carParts.engine;
 
-public class CarPartEngineFiat600 extends CarPartEngineBase
+import ar.edu.ub.pcsw.designPatterns.exercises.racers.carParts.CarPartBase;
+
+public class CarPartEngineFiat600 extends CarPartBase implements CarPartEngine
 {
     public CarPartEngineFiat600(int antiquity, float quality)
     {

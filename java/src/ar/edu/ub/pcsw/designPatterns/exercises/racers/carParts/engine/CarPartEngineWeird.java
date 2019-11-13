@@ -1,6 +1,8 @@
 package ar.edu.ub.pcsw.designPatterns.exercises.racers.carParts.engine;
 
-public class CarPartEngineWeird extends CarPartEngineBase
+import ar.edu.ub.pcsw.designPatterns.exercises.racers.carParts.CarPartBase;
+
+public class CarPartEngineWeird extends CarPartBase implements CarPartEngine
 {
     public CarPartEngineWeird(int antiquity, float quality)
     {

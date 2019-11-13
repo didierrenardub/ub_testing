@@ -1,6 +1,8 @@
 package ar.edu.ub.pcsw.designPatterns.exercises.racers.carParts.engine;
 
-public class CarPartEngineKwid extends CarPartEngineBase
+import ar.edu.ub.pcsw.designPatterns.exercises.racers.carParts.CarPartBase;
+
+public class CarPartEngineKwid extends CarPartBase implements CarPartEngine
 {
     public CarPartEngineKwid(int antiquity, float quality)
     {

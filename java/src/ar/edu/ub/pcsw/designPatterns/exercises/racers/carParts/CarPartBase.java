@@ -1,11 +1,11 @@
-package ar.edu.ub.pcsw.designPatterns.exercises.racers.carParts.body;
+package ar.edu.ub.pcsw.designPatterns.exercises.racers.carParts;
 
-public abstract class CarPartBodyBase implements CarPartBody
+public abstract class CarPartBase implements CarPart
 {
-    public CarPartBodyBase(int antiquity, float quality)
+    public CarPartBase(int antiquity, float quality)
     {
-        this.m_quality = quality;
         this.m_antiquity = antiquity;
+        this.m_quality = quality;
     }
 
     @Override
@@ -20,6 +20,6 @@ public abstract class CarPartBodyBase implements CarPartBody
         return this.m_antiquity;
     }
 
-    private float m_quality;
     private int m_antiquity;
+    private float m_quality;
 }

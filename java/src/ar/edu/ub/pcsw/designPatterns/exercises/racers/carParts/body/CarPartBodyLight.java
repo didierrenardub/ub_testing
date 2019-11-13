@@ -1,6 +1,8 @@
 package ar.edu.ub.pcsw.designPatterns.exercises.racers.carParts.body;
 
-public class CarPartBodyLight extends CarPartBodyBase
+import ar.edu.ub.pcsw.designPatterns.exercises.racers.carParts.CarPartBase;
+
+public class CarPartBodyLight extends CarPartBase implements CarPartBody
 {
     public CarPartBodyLight(int antiquity, float quality)
     {

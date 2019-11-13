@@ -7,8 +7,6 @@ public class RacesMain extends IMain
     @Override
     public void run(String[] args)
     {
-        //TODO: gas tanks
-        //TODO: tires
         //TODO: driver implementations
         //TODO: random car factories
         //TODO: track parts
