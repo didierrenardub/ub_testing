@@ -1,7 +1,5 @@
 package ar.edu.ub.pcsw.designPatterns.exercises.racers;
 
-import ar.edu.ub.pcsw.designPatterns.exercises.racers.trackParts.TrackPart;
-
 import java.util.ArrayList;
 
 public class Track
@@ -13,8 +11,19 @@ public class Track
 
     public Track addPart(TrackPart part)
     {
-        m_track.add(part);
+        this.m_track.add(part);
         return this;
+    }
+
+    @Override
+    public String toString()
+    {
+        StringBuilder result = new StringBuilder();
+        for(TrackPart tp : this.m_track)
+        {
+            result.append(tp.toString());
+        }
+        return result.toString();
     }
 
     private ArrayList<TrackPart> m_track;

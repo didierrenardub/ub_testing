@@ -9,6 +9,18 @@ public abstract class CarPartBase implements CarPart
     }
 
     @Override
+    public void setQuality(int quality)
+    {
+        this.m_quality = quality;
+    }
+
+    @Override
+    public void setAntiquity(int antiquity)
+    {
+        this.m_antiquity = antiquity;
+    }
+
+    @Override
     public float quality()
     {
         return this.m_quality;

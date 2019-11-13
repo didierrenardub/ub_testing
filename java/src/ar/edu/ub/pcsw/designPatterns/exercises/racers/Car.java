@@ -86,6 +86,18 @@ public class Car
         return this;
     }
 
+    @Override
+    public String toString()
+    {
+        return super.toString()
+                + "\n\t" + this.m_body.name()
+                + "\n\t" + this.m_brakes.name()
+                + "\n\t" + this.m_direction.name()
+                + "\n\t" + this.m_engine.name()
+                + "\n\t" + this.m_gasTank.name()
+                + "\n\t" + this.m_tires.name();
+    }
+
     private CarPartEngine m_engine;
     private CarPartDirection m_direction;
     private CarPartGasTank m_gasTank;

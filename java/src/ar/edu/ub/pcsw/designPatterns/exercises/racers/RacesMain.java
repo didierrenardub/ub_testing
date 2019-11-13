@@ -7,10 +7,12 @@ public class RacesMain extends IMain
     @Override
     public void run(String[] args)
     {
+        CarFactory cf = new CarFactoryRandom();
+        TrackFactory tf = new TrackFactoryRandom();
+        System.out.println(cf.create());
+        System.out.println(tf.create(30));
+
         //TODO: driver implementations
-        //TODO: random car factories
-        //TODO: track parts
-        //TODO: track factories
         //TODO: race business logic
     }
 }
