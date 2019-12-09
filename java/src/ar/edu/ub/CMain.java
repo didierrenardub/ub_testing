@@ -28,7 +28,7 @@ public class CMain extends IMain
         }
 
         System.out.println(prompt);
-        mains.get(this.userInput(1, mains.size() - 1) - 1).run(args);
+        mains.get(this.userInput(1, mains.size()) - 1).run(args);
     }
 
     public static void main(String[] args)
