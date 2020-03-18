@@ -43,7 +43,7 @@ class Student:
                     v = v / 10
                 avg = avg + v
         
-        avg = avg / (ex_count + gradables)
+        avg = avg / max([ex_count + gradables, 1])
         return avg
 
     def grades_average(self):
@@ -62,7 +62,7 @@ class Student:
                             grade = grade / 10
                         avg = avg + grade
         
-        avg = avg / (len(self._exercises) + gradables)
+        avg = avg / max([len(self._exercises) + gradables, 1])
         return avg
 
     def grade_class(self, class_number, attendance, permanence, mandatory_assignments, mandatory_grade, optional_assignments, optional_grade, question):

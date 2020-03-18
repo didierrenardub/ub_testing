@@ -1,8 +1,8 @@
-from students.students2019 import Students2019
+from students.students2020 import Students2020
 from common.connie import Table
 
 if __name__ == '__main__':
-    s = Students2019()
+    s = Students2020()
 
     t = Table(4, len(s.students()) + 1)
     t.cell(0, 0).set_text('Alumno')
