@@ -33,6 +33,7 @@ class Students2020(Students):
         self.matias().grade_class(      1, 10, 10,  0,  0,  0,  0,  0)
 
         self.cristian().add_exercise('1m',  7.0)
+        self.luis().add_exercise('1m',      7.5)
         self.franco().add_exercise('1m',    7.0)
         self.yainy().add_exercise('1m',     7.0)
         self.francisco().add_exercise('1m', 8.0)
