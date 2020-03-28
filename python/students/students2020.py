@@ -32,6 +32,7 @@ class Students2020(Students):
         self.ricardo().grade_class(     1,  1,  0,  0,  0,  0,  0,  0)
         self.matias().grade_class(      1, 10, 10,  0,  0,  0,  0,  0)
 
+        self.federico().add_exercise('1m',  7.5)
         self.victoria().add_exercise('1m',  7.5)
         self.cristian().add_exercise('1m',  7.0)
         self.luis().add_exercise('1m',      7.5)
@@ -39,21 +40,22 @@ class Students2020(Students):
         self.yainy().add_exercise('1m',     7.0)
         self.francisco().add_exercise('1m', 8.0)
         self.alan().add_exercise('1m',      4.0)
+        self.ricardo().add_exercise('1m',   7.0)
         self.matias().add_exercise('1m',    5.0)
 
         # class 2                       c   a   p  mp  ms  op  os   q
         self.pablo().grade_class(       2,  1,  0,  1,  0,  0,  0,  0)
-        self.federico().grade_class(    2, 10, 10,  1,  0,  0,  0,  0)
-        self.victoria().grade_class(    2, 10, 10,  1,  0,  0,  0,  0)
+        self.federico().grade_class(    2, 10, 10,  1,  8,  0,  0,  0)
+        self.victoria().grade_class(    2, 10, 10,  1,  8,  0,  0,  0)
         self.manuel().grade_class(      2,  1,  0,  1,  0,  0,  0,  0)
         self.cristian().grade_class(    2, 10, 10, 10,  7,  0,  0,  0)
-        self.luis().grade_class(        2, 10, 10,  1,  0,  0,  0,  0)
+        self.luis().grade_class(        2, 10, 10,  1,  8,  0,  0,  0)
         self.franco().grade_class(      2, 10, 10, 10,  7,  0,  0,  0)
         self.yainy().grade_class(       2, 10, 10, 10,  7,  0,  0,  0)
         self.francisco().grade_class(   2, 10, 10, 10,  8,  0,  0,  0)
         self.nazareno().grade_class(    2,  1,  0,  1,  0,  0,  0,  0)
         self.alan().grade_class(        2, 10, 10, 10,  4,  0,  0,  0)
-        self.ricardo().grade_class(     2, 10, 10,  1,  0,  0,  0,  0)
+        self.ricardo().grade_class(     2, 10, 10,  1,  7,  0,  0,  0)
         self.matias().grade_class(      2, 10, 10, 10,  5,  0,  0,  0)
 
         self.federico().add_exercise('2m',  10.0)
@@ -62,7 +64,7 @@ class Students2020(Students):
         self.franco().add_exercise('2m',    10.0)
         self.yainy().add_exercise('2m',     10.0)
         self.alan().add_exercise('2m',      10.0)
-        self.ricardo().add_exercise('2m',   10.0)
+        #self.ricardo().add_exercise('2m',   10.0)
         self.matias().add_exercise('2m',    10.0)
 
         self.ricardo().add_exercise('2o2',  10.0)
@@ -79,7 +81,7 @@ class Students2020(Students):
         self.francisco().grade_class(   3, 10, 10,  1,  0,  0,  0,  0)
         self.nazareno().grade_class(    3,  1,  0,  1,  0,  0,  0,  0)
         self.alan().grade_class(        3, 10, 10, 10, 10,  0,  0,  0)
-        self.ricardo().grade_class(     3, 10, 10,  3, 10,  0,  0,  0)
+        self.ricardo().grade_class(     3, 10, 10,  3,  0,  0,  0,  0)
         self.matias().grade_class(      3, 10, 10, 10, 10,  5, 10,  0)
 
         # class 4                       c   a   p  mp  ms  op  os   q
