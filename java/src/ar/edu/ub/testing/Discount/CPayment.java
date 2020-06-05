@@ -1,17 +1,9 @@
 package ar.edu.ub.testing.Discount;
 
-public class CPayment
+public class CPayment extends CNameableBase
 {
     public CPayment(String name)
     {
-        this.m_name = name;
+        super(name);
     }
-
-    public String name()
-    {
-        // TODO: implement
-        return null;
-    }
-
-    private String m_name;
 }
