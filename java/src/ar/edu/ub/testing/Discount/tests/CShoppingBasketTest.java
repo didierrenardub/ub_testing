@@ -17,7 +17,7 @@ class CShoppingBasketTest
 	@BeforeEach
 	void setUp() throws Exception
 	{
-		testData = new CTestData();
+		testData = new ar.edu.ub.testing.Discount.tests.CTestData();
 	}
 
 	@Test
@@ -40,5 +40,5 @@ class CShoppingBasketTest
 		assertEquals(51.0f, basket.net());
 	}
 	
-	private CTestData testData;
+	private ar.edu.ub.testing.Discount.tests.CTestData testData;
 }

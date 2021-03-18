@@ -1,5 +1,6 @@
 package ar.edu.ub.testing;
 
+import ar.edu.ub.IMain;
 import ar.edu.ub.testing.ConsoleWarriors.CPlayer;
 import ar.edu.ub.testing.ConsoleWarriors.CTournament;
 import ar.edu.ub.testing.ConsoleWarriors.CWarriorBot;
@@ -8,11 +9,9 @@ import ar.edu.ub.testing.Students.CStudentStatistics;
 import ar.edu.ub.testing.Students.base.IStudent;
 import ar.edu.ub.testing.TicTacToe.CTicTacBot;
 
-import java.util.Scanner;
-
-public class CMain
+public class CTestingMain extends IMain
 {
-    private CMain()
+    public CTestingMain()
     {
         this.m_stats = null;
     }
@@ -32,35 +31,6 @@ public class CMain
                 System.out.println("\t" + s.name() + ": " + s.gradesAverage());
             }
         }
-    }
-    
-    private int userInput(int min, int max)
-    {
-        Scanner s = new Scanner(System.in);
-        
-        int input = min - 1;
-        
-        while(input < min || input > max)
-        {
-            try
-            {
-                input = s.nextInt();
-            }
-            catch(Exception e)
-            {
-                s.nextLine();
-            }
-            finally
-            {
-                
-                if(input < min || input > max)
-                {
-                    System.out.println("Invalid input, try again:");
-                }
-            }
-        }
-        
-        return input;
     }
 
     private void consoleWarriorsTournament()
@@ -91,35 +61,34 @@ public class CMain
         t.play();
     }
 
-    public static void main(String[] args)
+    @Override
+    public void run(String[] args)
     {
-        CMain app = new CMain();
-    
         System.out.println("Choose an action:\n1 - Run exercises\n2 - Students grading\n3 - Console Warriors tournament\n4 - Flipboard tournament\n5 - Tic Tac Toe tournament");
     
-        switch(app.userInput(1, 5))
+        switch(this.userInput(1, 5))
         {
             case 1:
-                if(app.stats() != null)
+                if(this.stats() != null)
                 {
-                    app.stats().runExercises();
+                    this.stats().runExercises();
                 }
             break;
             
             case 2:
-                app.studentsGrading();
+                this.studentsGrading();
             break;
         
             case 3:
-                app.consoleWarriorsTournament();
+                this.consoleWarriorsTournament();
             break;
             
             case 4:
-                app.flipboardTournament();
+                this.flipboardTournament();
             break;
 
             case 5:
-                app.tictactoeTournament();
+                this.tictactoeTournament();
             break;
         }
     }

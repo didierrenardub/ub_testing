@@ -2,3 +2,6 @@
 out/*
 .idea/workspace.xml___jb_tmp___
 /bin/
+*.log
+.metadata
+.settings

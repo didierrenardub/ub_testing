@@ -3,18 +3,12 @@ package ar.edu.ub.testing.Discount;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class CCommerce
+public class CCommerce extends CNameableBase
 {
     public CCommerce(String name)
     {
-        this.m_name = name;
+        super(name);
         this.m_products = new ArrayList<>();
-    }
-
-    public String name()
-    {
-        // TODO: implement
-        return null;
     }
     
     public void addProduct(CProductInstance productInstace)
@@ -45,6 +39,5 @@ public class CCommerce
     	return null;
     }
 
-    private String m_name;
     private Collection<CProductInstance> m_products;
 }

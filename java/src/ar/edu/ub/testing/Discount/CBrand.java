@@ -1,17 +1,9 @@
 package ar.edu.ub.testing.Discount;
 
-public class CBrand
+public class CBrand extends CNameableBase
 {
     public CBrand(String name)
     {
-        this.m_name = name;
+        super(name);
     }
-
-    public String name()
-    {
-        // TODO: implement
-        return null;
-    }
-
-    private String m_name;
 }
